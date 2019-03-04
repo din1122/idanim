@@ -4,10 +4,12 @@ import App from "./App.vue";
 import router from "./router";
 import store from "./store";
 import './assets/style.css';
+import 'viewerjs/dist/viewer.css';
 var VueScrollTo = require('vue-scrollto');
 import VueYoutube from 'vue-youtube'
 import * as VueGoogleMaps from 'vue2-google-maps'
-
+import Viewer from 'v-viewer'
+Vue.use(Viewer)
 Vue.use(VueGoogleMaps, {
   load: {
     key: 'AIzaSyAfadAd_19lorSH8SaDNfQP1rorYOirzOY',

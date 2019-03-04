@@ -5,9 +5,10 @@
 
     </v-flex>
 
-            <v-flex xs12 xl4 text-xs-center >
-            <v-flex d-inline xs12>
-                <span class="main-title">קבוצת עידנים</span><br>
+            <v-flex xs12 xl4 md4 text-xs-center >
+            <v-flex npm3 xs12>
+                <span class="main-title">קבוצת</span>
+                   <img class="logo-home" :src="require('@/assets/trans.png')">
                 <div class="fade-bg mt-3">
                 <span class="display-1">אנחנו תמיד משתדלים יותר</span>
                 </div>
@@ -15,7 +16,7 @@
             <v-flex xs12 pt-5 >
             <v-layout row fill-height align-end justify-space-around >
             
-            <v-flex xs3 class="blue-box" pa-3 elevation-2 v-for="item in texts" > 
+            <v-flex xs3 class="blue-box npm" pa-3 elevation-2 v-for="item in texts" > 
            <v-layout row wrap justify-end fill-height> 
             <v-flex xs12   class="icon-box" text-xs-center>
             <span class="banner-number">{{item.number}}</span>
@@ -23,7 +24,7 @@
             <v-flex xs12>
             <v-divider dark></v-divider>
             </v-flex>
-            <v-flex xs12 display-1 text-xs-right  white--text>
+            <v-flex xs12 display-1 text-xl-right text-xs-center  white--text class="stats-text">
             <span class="font-weight-bold">{{item.title}}</span><br>
             <span class="font-weight-thin">{{item.subtitle}}</span>
             </v-flex>
@@ -52,8 +53,8 @@ export default {
                 {imgsrc:'medal.png', title:'מסירות', subtitle:'מבטיחים'}
             ],
             texts:[
-                {title:'שנות', subtitle:'ניסיון', number:'12'},
-                {title:'עובדים', subtitle:'בחברה', number:'32'},
+                {title:'שנות', subtitle:'ניסיון', number:'25'},
+                {title:'עובדים', subtitle:'בחברה', number:'308'},
                 {title:'לקוחות', subtitle:'מרוצים', number:'2054'},
              
             ]
@@ -65,13 +66,13 @@ export default {
 
 .banner-number{
     color:white;
-    font-size:3em !important;
+    font-size:3em 
 }
 
 .main-pic{
 background-image: url("../assets/main.jpg"); /* The image used */
   background-color: #cccccc; /* Used if the image is unavailable */
-    height: 60vh;
+    height: 75vh;
     background-position: center 40%;
     background-repeat: no-repeat;
     background-size: cover;
@@ -89,8 +90,7 @@ background-image: url("../assets/main.jpg"); /* The image used */
   background:#fff;
 }
 .main-title{
-        border-right: 7px solid #78B821;
-    padding-right: 5px;
+    padding-left:4%;
     font-size: 75px;
     line-height: 1.35;
 }

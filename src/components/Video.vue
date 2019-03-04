@@ -1,5 +1,5 @@
 <template>
-<v-container fluid grid-md-list fill-height>
+<v-container fluid grid-md-list fill-height npm>
 
 <v-layout row wrap text-xs-center align-center>
 
@@ -8,7 +8,7 @@
   	<v-flex xs12 pa-5>
 		<span class="section-title">צפו בהדגמה</span>
 		</v-flex>
-    <div class="padding-box" ref="video" data-step="1">
+    <div class="padding-box npm" ref="video" data-step="1">
     <div  class="video-box">
     
    <youtube :video-id="videoId" ref="youtube"  class="player" fitParent></youtube>
@@ -26,7 +26,7 @@ import Scrollama from 'vue-scrollama'
 export default {
   data() {
     return {
-      videoId: 'qzNzVCQdF6E',
+      videoId: 'q3j2xfzalU4',
   
     }
   },

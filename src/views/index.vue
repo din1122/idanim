@@ -9,6 +9,9 @@
 <section id="three">
 <MoreProducts />
 </section>
+<section>
+<Gallery />
+</section>
 <section id="four">
 <About />
 </section>
@@ -27,6 +30,7 @@ import Home from '@/components/Home'
 import Video from '@/components/Video'
 import About from '@/components/About'
 import Contact from '@/components/Contact'
+import Gallery from '@/components/Gallery'
 export default {
    data(){
       return{
@@ -34,7 +38,7 @@ export default {
       }
    },
    components: {
-      Home, Products, MoreProducts,Video, About, Contact
+      Home, Products, MoreProducts,Video, About, Contact, Gallery
   }
 }
 </script>

@@ -1,23 +1,26 @@
 <template>
-<v-container pa-5 grid-md-list class="mnp2">
-<Scrollama @step-enter="stepEnterHandler" :offset="0.5">
+<v-container grid-list-md grid-list-xl grid-list-xs fluid>
+<Scrollama @step-enter="stepEnterHandler">
 <v-layout row wrap>
 
 
 
-<v-flex xs12 xl3 offset-xs0 offset-xl2  data-step="2"  ref="rightbox" class="right-section m-pt-5">
+<v-flex xs12 xl3 md4 offset-md1 offset-xs0 offset-xl1  data-step="2"  ref="rightbox" class="right-section m-pt-5 m-pb-5">
     <v-card >
-    <v-card-title class="white--text">צרו קשר</v-card-title>
+    <v-card-title class="white--text">מנהלים</v-card-title>
     <v-card-text >
     <v-layout align-center >
     <v-flex>
         <v-layout row wrap>   
         <v-flex xs12 pa-3>
-                    <img :src="require('@/assets/main.jpg')" alt="home-1-idanim" class="Profile-img">
+                    <img :src="require('@/assets/buiss.png')" alt="home-1-idanim" class="Profile-img">
                       <v-flex xs12 class="text-xs-right">
                         <span class="body-2 underline">נועם אשכנזי</span><br>
-                        <span>לורם איפסום דולור סיט אמט, קונסקטורר אדיפיסינג אלית לורם איפסום דולור סיט אמט, קונסקטורר אדיפיסינג אלית. סת אלמנקום ניסי נון ניבאה. דס איאקוליס וולופטה דיאם. וסטיבולום אט דולור, קראס אגת לקטוס וואל אאוגו וסטיבולום סוליסי טידום בעליק. נולום ארווס סאפיאן - פוסיליס קוויס, אקווזמן קוואזי במר מודוף. אודיפו בלאסטיק מונופץ קליר, בנפת נפקט למסון בלרק - וענוף נולום ארווס סאפיאן - פוסיליס קוויס, אקווזמן נולום ארווס סאפיאן - פוסיליס קוויס, אקווזמן קוואזי במר מודוף. אודיפו בלאסטיק מונופץ קליר
-                    </span>
+                        <p>
+                        בעלים ומנכ"ל הקבוצה,<br>
+                        נועם צבר נסיון רב בכל הקשור לתחום נקיון כבישים ומדרכות, נחשב לאחד המומחים בתחום רכבי הטיאוט
+                        מכל הסוגים.
+                    </p>
             </v-flex>
         </v-flex>   
           
@@ -29,7 +32,9 @@
     </v-card>
 </v-flex>
 
-<v-flex xs12 xl7 class="left-section pa-5" ref="leftbox" data-step="1">
+<v-flex xs12 xl7 md7 ref="leftbox" data-step="1">
+<v-card class="left-card">
+<v-card-text>
 <div class="pb-4"><span class="display-2 about-title"> עלינו</span></div>
     <p>חברת עידנים עבודות ציבוריות בע"מ נוסדה ע"י נועם אשכנזי לפני כ 25 שנים.
 במשך כל השנים מאז הקמתה עסקה החברה במתן שירותי טיאוט כבישים ומדרכות לעיריות שונות כגון,  ראשון לציון, נס ציונה, יהוד, סביון, תל אביב ועוד, וכל זאת באמצעות מטאטאי כביש מסוגים שונים ומאות עובדים מסורים. 
@@ -39,6 +44,8 @@
 וגם מתקני טיאוט המורכבים על משאיות מסוגים שונים, בנפח של החל מ 4 מ"ק ועד 8 מ"ק.
 כמו כן מייבאת החברה עגלות ניקיון המשמשות את עובדי הנקיון לניקוי הרחובות ואביזרים שונים הקשורים לתחום ניקוי כבישים ומדרכות.
 </p>
+</v-card-text>
+</v-card>
 </v-flex>
 
 
@@ -103,10 +110,13 @@ background: #78b821;
 .left-section{
     border:solid 1px #A3D855;
     background:white;
-      background:white;
     -webkit-box-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2), 0px 1px 1px 0px rgba(0,0,0,0.14), 0px 1px 3px 0px rgba(0,0,0,0.12);
-      box-shadow: 5px 7px 13px -1px rgba(0,0,0,0.2), 0px 1px 1px 0px rgba(0,0,0,0.14), 0px 1px 3px 0px rgba(0,0,0,0.12);
-      opacity:0;
+    box-shadow: 5px 7px 13px -1px rgba(0,0,0,0.2), 0px 1px 1px 0px rgba(0,0,0,0.14), 0px 1px 3px 0px rgba(0,0,0,0.12);
+    opacity:0;
+}
+.left-card{
+        border:solid 1px #A3D855;
+
 }
 .right-section{
     opacity:1

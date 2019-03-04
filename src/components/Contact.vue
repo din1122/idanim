@@ -1,16 +1,14 @@
 <template>
-<v-container pa-5 grid-md-list class="mnp2">
+<v-container grid-list-md grid-list-xl grid-list-xs fluid 
+ :class="{'': $vuetify.breakpoint.smAndDown, 'pa-5': $vuetify.breakpoint.mdAndUp}"
+>
 <Scrollama @step-enter="stepEnterHandler" :offset="0.5">
-<v-layout row wrap>
-
-
-
-<v-flex xs12 xl3 offset-xs0 offset-xl2  data-step="2"  ref="rightbox" class="right-section m-pt-5">
+<v-layout row wrap justify-space-around>
+<v-flex xs12 xl3 md4 offset-md1 offset-xs0 offset-xl1  data-step="2"  ref="rightbox" class="right-section m-pt-5">
     <v-card >
     <v-card-title class="white--text">צור קשר</v-card-title>
-   
-        <v-layout row wrap fill-height pa-3>   
-        <v-flex xl12 pt-5>
+        <v-layout row wrap fill-height class="contact-layout">   
+        <v-flex xl10 pt-5 md10 ma-auto xs10>
                   <v-text-field outline label="שם" text-xs-right>
                   </v-text-field>
                   <v-text-field outline label="אימייל" text-xs-right>
@@ -19,19 +17,16 @@
                   <v-btn block large style="font-size:1.4em;" class="white--text">שלח</v-btn>
                   </v-flex>
         </v-flex>   
-   
         <v-flex xs12 text-xs-center id="contact-text">
-      
         <span>טלפון: </span> <span>03-6208656/7</span><br>
        <span>idanim11@gmail.com</span>
-    
         </v-flex>      
         </v-layout>
     
     </v-card>
 </v-flex>
 
-<v-flex xs12 xl7 class="border-left fill-height pa-5 mnp2 left-section" ref="leftbox" data-step="1">
+<v-flex xs12 xl7 md7 class="border-left fill-height pa-5 mnp2 left-section" ref="leftbox" data-step="1">
   <Gmap />
     <div class="pb-3 pt-3"><span class="display-2 about-title "> המקום </span></div>
     <p>

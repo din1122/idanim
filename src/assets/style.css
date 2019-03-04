@@ -3,6 +3,11 @@ body {
         sans-serif !important;
 }
 
+.logo-home {
+    margin: -32px;
+    height: 100px;
+}
+
 .application {
     font-family: 'Assistant',
         sans-serif !important;
@@ -14,8 +19,37 @@ body {
         sans-serif !important;
 }
 
+.caption-text {
+    font-size: 1.4em;
+}
+
+.details-link {
+    font-size: 1.5em;
+    color: #2b79d9;
+    display: inline-block;
+
+}
+
+.details-link:after {
+    content: '';
+    width: 0px;
+    height: 1px;
+    display: block;
+    background: #2b79d9;
+    transition: 300ms;
+}
+
+.details-link:hover:after {
+    width: 100%;
+}
+
+.details-link:hover {
+    cursor: pointer;
+}
+
+
 .v-toolbar {
-    border-bottom: 4px solid #5991CD;
+    border-bottom: 4px solid #78B821;
 }
 
 .section-title {
@@ -40,6 +74,7 @@ body {
 .product-title {
     font-size: 2.2em;
     color: #fff;
+    letter-spacing: 1.5px;
 }
 
 .logo {
@@ -52,11 +87,11 @@ body {
 }
 
 .fade-prod-bg {
-    background: linear-gradient(106deg, rgb(250, 250, 250) 50%, rgba(120, 184, 33, 1) 100%);
+    background: linear-gradient(106deg, rgb(250, 250, 250) 30%, rgba(120, 184, 33, 1) 100%);
 }
 
 .fade-prod-bg-l {
-    background: linear-gradient(106deg, rgb(134, 191, 57) 50%, rgb(250, 250, 250) 100%)
+    background: linear-gradient(106deg, rgb(134, 191, 57) 30%, rgb(250, 250, 250) 100%)
 }
 
 .idanim-bg {
@@ -87,9 +122,68 @@ section {
     display: none;
 }
 
+.r-product {
+    display: none;
+}
+
 @media screen and (max-width:997px) {
+    .product-title {
+        font-size: 2.2em;
+        color: #fff;
+        letter-spacing: unset !important;
+    }
+
+    .main-title {
+        font-size: 65px !important;
+        line-height: 1.35;
+    }
+
+    section {
+        height: unset !important;
+    }
+
+    .l-product {
+        display: none;
+    }
+
+    .r-product {
+        display: flex;
+    }
+
+    .footer-logo {
+        width: 250px;
+    }
+
+    .contact-layout {
+        height: unset !important;
+    }
+
+    .fade-prod-bg {
+        background: linear-gradient(106deg, #fafafa -40%, #78B821 100%)
+    }
+
+    .npm {
+        padding: unset !important
+    }
+
+    .stats-text {
+        font-size: 2em !important;
+    }
+
+    .hide-om {
+        display: none;
+    }
+
     .main-pic {
         display: none;
+    }
+
+    p {
+        font-size: 1.3em !important;
+    }
+
+    #contact-text {
+        padding: 16px 16px !important;
     }
 
     .main-pic-m {
@@ -117,17 +211,6 @@ section {
         box-shadow: 0px 0px 0px 0px !important;
     }
 
-    .floating-text-1,
-    .floating-text-2,
-    .floating-text-3,
-    .floating-text-4,
-    .top-left-svg,
-    .top-right-svg,
-    .bottom-left-svg,
-    .bottom-right-svg {
-        display: none !important;
-    }
-
     .hidden-x {
         visibility: hidden !important;
         display: none;
@@ -147,17 +230,16 @@ section {
         padding-top: 25px !important;
     }
 
+    .m-pb-5 {
+        padding-bottom: 25px !important;
+    }
+
     section {
-        height: auto !important;
+        height: unset !important;
     }
 
-    .mhome-container {
-        visibility: visible !important;
-        display: flex !important;
-    }
-
-    .mnp {
-        padding: 0 !important;
+    .npm3 {
+        padding: 16px 16px !important;
     }
 
     .mnp2 {
@@ -174,29 +256,46 @@ section {
     }
 }
 
-.hidden-x {
-    visibility: visible;
+@media (min-width: 640px) {}
+
+
+@media (min-width: 1024px) {
+    section {
+        height: unset !important;
+    }
+
+    .display-1 {
+        font-size: 26px !important;
+    }
+
+    .banner-number {
+        font-size: 2.5em !important;
+    }
+
 }
 
-.mhome-container {
-    visibility: hidden;
-    display: none;
-}
+@media (min-width: 1200px) {
+    .hidden-x {
+        visibility: visible;
+    }
 
-.hidden-v {
-    visibility: hidden;
-    display: none;
-}
+    .mhome-container {
+        visibility: hidden;
+        display: none;
+    }
 
-.article-title:hover {
-    color: #bcbcbc;
-    transition: 0.2s;
-}
+    .hidden-v {
+        visibility: hidden;
+        display: none;
+    }
 
-.underline {
-    text-decoration: underline;
-}
+    .article-title:hover {
+        color: #bcbcbc;
+        transition: 0.2s;
+    }
 
-.no-padding {
-    padding: 0 !important;
+    .underline {
+        text-decoration: underline;
+    }
+
 }

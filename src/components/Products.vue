@@ -1,25 +1,35 @@
 <template>
 
-<v-container grid-list-xs pa-5>
+<v-container grid-list-xs grid-list-md  fluid>
 
-	<v-layout row wrap>
-		<v-flex xs12 pa-5 >
+	<v-layout row wrap justify-space-around>
+		<v-flex xs12 pa-5 class="npm3" >
 		<span class="section-title">הדגמים שלנו</span>
 		</v-flex>
-		<v-flex xs12 pa-5>
-		<v-layout>
-		<v-flex xs12 xl3 @click="dialog1 = true">
+		<v-flex xs12 pa-5 class="npm">
+		<v-layout row wrap>
+		<v-flex xs12 xl3 md4 @click="dialog1 = true">
 				<div class="img-box">
-					<img :src="require('@/assets/main.jpg')" alt="home-1-cannabis" class="article-img">
+					<img :src="require('@/assets/main.jpg')" alt="home-1-model" class="article-img">
 				</div>
 		</v-flex>
-			<v-flex xs10 xl8 class="article-text" pr-3>
+			<v-flex xs12 xl8 md8 class="article-text npm" pr-3>
 			<div  class="fade-prod-bg">
 			<span class="product-title">H3 - מפרט טכני</span>
 			</div>
-				<p @click="dialog1 = true">
-				לורם איפסום דולור סיט אמט, קונסקטורר אדיפיסינג אלית לורם איפסום דולור סיט אמט, קונסקטורר אדיפיסינג אלית. סת אלמנקום ניסי נון ניבאה. דס איאקוליס וולופטה דיאם. וסטיבולום אט דולור, קראס אגת לקטוס וואל אאוגו וסטיבולום סוליסי טידום בעליק. נולום ארווס סאפיאן - פוסיליס קוויס, אקווזמן קוואזי במר מודוף. אודיפו בלאסטיק מונופץ קליר, בנפת נפקט למסון בלרק - וענוף נולום ארווס סאפיאן - פוסיליס קוויס, אקווזמן נולום ארווס סאפיאן - פוסיליס קוויס, אקווזמן קוואזי במר מודוף. אודיפו בלאסטיק מונופץ קליר
-				</p>
+			<v-layout column wrap justify-space-between>
+				<v-flex>
+					<p class="caption-text" @click="dialog1 = true">
+				מטאטא כבישים הידרוסטטי , הכלי מיוצר בנפחים שונים, 3.2 – 3.5 – 4 מ"קמ
+				מנוע פרקינס, משאבות הידראוליות מתוצרת .BOSCH
+				הכלי צר ומתאים במיוחד לרחובות צרים ואזורים צפופים.
+				כולל 4 מברשות הנעות לכל הכיוונים ופיית יניקה בעלת כושר יניקה גבוה במיוחד
+					</p>
+				</v-flex>
+				<v-flex>
+					<p @click="dialog1 = true" class="details-link">לפרטים נוספים..</p>
+				</v-flex>
+			</v-layout>
 			</v-flex>
 		</v-layout>
 		</v-flex>
@@ -38,36 +48,59 @@
 			</v-toolbar>
 			<v-card-text>
 			<v-container>
-			<v-flex xs8 ma-auto>
-				<v-img :src="require('@/assets/main.jpg')" aspect-ratio="2"> </v-img>
+			<v-flex xs12 xl8 ma-auto>
+				<v-img :src="require('@/assets/H3/h3-0.jpg')"></v-img>
 			</v-flex>
-			<v-flex xs8 ma-auto>
-			<span class="display-2">H3</span>
+			<v-flex xs12 xl8 ma-auto>
+			<span class="display-2">	דגם H3  מתוצרת "טיסאן" </span>
 			<p>
-			לורם איפסום דולור סיט אמט, קונסקטורר אדיפיסינג אלית לורם איפסום דולור סיט אמט, קונסקטורר אדיפיסינג אלית. סת אלמנקום ניסי נון ניבאה. דס איאקוליס וולופטה דיאם. וסטיבולום אט דולור, קראס אגת לקטוס וואל אאוגו וסטיבולום סוליסי טידום בעליק. נולום ארווס סאפיאן - פוסיליס קוויס, אקווזמן קוואזי במר מודוף. אודיפו בלאסטיק מונופץ קליר, בנפת נפקט למסון בלרק - וענוף נולום ארווס סאפיאן - פוסיליס קוויס, אקווזמן נולום ארווס סאפיאן - פוסיליס קוויס, אקווזמן קוואזי במר מודוף. אודיפו בלאסטיק מונופץ קליר
+						
+			מטאטא כבישים הידרוסטטי , הכלי מיוצר בנפחים שונים, 3.2 – 3.5 – 4 מ"קמ
+			מנוע פרקינס, משאבות הידראוליות מתוצרת .BOSCH
+			הכלי צר ומתאים במיוחד לרחובות צרים ואזורים צפופים.
+			כולל 4 מברשות הנעות לכל הכיוונים ופיית יניקה בעלת כושר יניקה גבוה במיוחד,
+			מתזי מיים הממוקמים בחזית הכלי מפזרים רסס מיים כדי לספוג את האבק בזמן פעולת הטיאטוא.
+			ה H3 כולל מערכת נוספת לשטיפה בלחץ עם צינור באורך של 15 מטר ואקדח שטיפה בלחץ גבוה. המערכת מורכבת על גג הכלי ומאפשרת שטיפה בכל הכיוונים.
+			תא נהג פנורמי, מבודד מפגעי מזג אויר, רעשים, אבק וגזי פליטה.
+			תא הנהג כולל מערכת מיזוג אויר, כיסא נהג קפיצי, מתכוונן ונוח במיוחד, רדיו ומצלמה אחורית עם מסך צבעוני.
+			וכן מערכת שליטה ותפעול של המברשות, השטיפה וריקון מיכל האשפה.
+
 			</p>
+			<v-img :src="require('@/assets/H3/h3-1.jpg')"></v-img>
+			<v-img :src="require('@/assets/H3/h3-2.jpg')"></v-img>
 			</v-flex>
 			
 			</v-container>
 			</v-card-text>
 			</v-card>
 		</v-dialog>
-		<v-flex xs12 pa-5>
-		<v-layout>
-
-			<v-flex xs10 xl8 class="article-text" pr-3>
-			<div  class="fade-prod-bg-l  text-xs-left">
-			<span class="product-title">H1 - מפרט טכני</span>
-			</div>
-				<p @click="dialog2 = true">
-				לורם איפסום דולור סיט אמט, קונסקטורר אדיפיסינג אלית לורם איפסום דולור סיט אמט, קונסקטורר אדיפיסינג אלית. סת אלמנקום ניסי נון ניבאה. דס איאקוליס וולופטה דיאם. וסטיבולום אט דולור, קראס אגת לקטוס וואל אאוגו וסטיבולום סוליסי טידום בעליק. נולום ארווס סאפיאן - פוסיליס קוויס, אקווזמן קוואזי במר מודוף. אודיפו בלאסטיק מונופץ קליר, בנפת נפקט למסון בלרק - וענוף נולום ארווס סאפיאן - פוסיליס קוויס, אקווזמן נולום ארווס סאפיאן - פוסיליס קוויס, אקווזמן קוואזי במר מודוף. אודיפו בלאסטיק מונופץ קליר
-				</p>
+		<v-flex xs12 pa-5 class="npm">
+		<v-layout row wrap>
+			<v-flex xs12 xl3 md4  @click="dialog2 = true" class="r-product">
+					<div class="img-box">
+						<img :src="require('@/assets/H1/h1-0.jpg')" alt="home-1-idanim" class="article-img">
+					</div>
 			</v-flex>
-				<v-flex xs12 xl3 @click="dialog2 = true">
+			<v-flex xs12 xl8 md8 class="article-text npm" pl-3>
+			<div  class="fade-prod-bg-l  text-xs-left">
+			<span class="product-title">H1 - דגם תוצרת טיסאן <br></span>
+			</div>
+				<v-layout column wrap justify-space-between>
+				<v-flex>
+					<p class="caption-text" @click="dialog2 = true">
+					דגם מסוג H1 מתאים למדרכות וכבישים קטנים בעל זרוע טיטוא אחת
+					</p>
+				</v-flex>
+				<v-flex>
+					<p @click="dialog2 = true" class="details-link">לפרטים נוספים..</p>
+				</v-flex>
+			</v-layout>
+			</v-flex>
+				<v-flex xs12 xl3 md4  @click="dialog2 = true" class="l-product">
 				<div class="img-box">
-					<img :src="require('@/assets/h1.jpg')" alt="home-1-cannabis" class="article-img">
+					<img :src="require('@/assets/h1.jpg')" alt="home-1-idanim" class="article-img">
 				</div>
-		</v-flex>
+				</v-flex>
 		</v-layout>
 		</v-flex>
 		<v-dialog v-model="dialog2" hide-overlay>
@@ -75,7 +108,7 @@
 			<v-toolbar>
 
 			<v-toolbar-title>
-			<span class=" black--text">H3 - מפרט טכני </span>
+			<span class=" black--text">H1 - מפרט טכני </span>
 			</v-toolbar-title>
 				<v-spacer></v-spacer>
 			<v-toolbar-items>
@@ -85,34 +118,56 @@
 			</v-toolbar>
 			<v-card-text>
 			<v-container>
-			<v-flex xs8 ma-auto>
-				<v-img :src="require('@/assets/h1.jpg')" aspect-ratio="2"> </v-img>
+			<v-flex xs12 xl8 ma-auto>
+				<v-img :src="require('@/assets/H1/h1-0.jpg')" aspect-ratio="1"> </v-img>
 			</v-flex>
-			<v-flex xs8 ma-auto>
-			<span class="display-2">H3</span>
+			<v-flex xs12 xl8 ma-auto>
+			<span class="display-2">דגם H1 תוצרת "טיסאן"</span>
 			<p>
-			לורם איפסום דולור סיט אמט, קונסקטורר אדיפיסינג אלית לורם איפסום דולור סיט אמט, קונסקטורר אדיפיסינג אלית. סת אלמנקום ניסי נון ניבאה. דס איאקוליס וולופטה דיאם. וסטיבולום אט דולור, קראס אגת לקטוס וואל אאוגו וסטיבולום סוליסי טידום בעליק. נולום ארווס סאפיאן - פוסיליס קוויס, אקווזמן קוואזי במר מודוף. אודיפו בלאסטיק מונופץ קליר, בנפת נפקט למסון בלרק - וענוף נולום ארווס סאפיאן - פוסיליס קוויס, אקווזמן נולום ארווס סאפיאן - פוסיליס קוויס, אקווזמן קוואזי במר מודוף. אודיפו בלאסטיק מונופץ קליר
+				משאית לטיאוט כבישים ומדרכות
+מהירות נסיעה 0-24 ק"מ
+טיפוס: 22
+קיבולת גורפת: 22,000 מ"ר
+נתיב ניקוי: 1330-2350 מ"מ
+מנוע דיזל 26,5
+קיבולת הופר 550 ל
+מטאטא ללא אבק עם מערכת סינון
+מתאים לכל עונות השנה
+כלל מברשת אחת המגיעה למרחק של עד 2350 מ"מ
 			</p>
+			<v-img :src="require('@/assets/H1/h1-1.jpg')" alt="home-1-idanim"> </v-img>
+			<v-img :src="require('@/assets/H1/h1-2.jpg')" alt="home-1-idanim"> </v-img>
 			</v-flex>
 			
 			</v-container>
 			</v-card-text>
 			</v-card>
 		</v-dialog>
-	<v-flex xs12 pa-5>
-		<v-layout>
-		<v-flex xs12 xl3 @click="dialog3 = true">
+	<v-flex xs12 pa-5 class="npm">
+		<v-layout row wrap>
+		<v-flex xs12 xl3 md4  @click="dialog3 = true">
 				<div class="img-box">
-					<img :src="require('@/assets/h5.jpg')" alt="home-1-cannabis" class="article-img">
+					<img :src="require('@/assets/H5/h5-0.jpg')" alt="home-1-H5" class="article-img">
 				</div>
 		</v-flex>
-			<v-flex xs10 xl8 class="article-text" pr-3>
+			<v-flex xs12 xl8 md8 class="article-text npm" pr-3>
 			<div  class="fade-prod-bg">
-			<span class="product-title">H3 - מפרט טכני</span>
+			<span class="product-title">דגם H5  מתוצרת "טיסאן"</span>
 			</div>
-				<p @click="dialog3 = true">
-				לורם איפסום דולור סיט אמט, קונסקטורר אדיפיסינג אלית לורם איפסום דולור סיט אמט, קונסקטורר אדיפיסינג אלית. סת אלמנקום ניסי נון ניבאה. דס איאקוליס וולופטה דיאם. וסטיבולום אט דולור, קראס אגת לקטוס וואל אאוגו וסטיבולום סוליסי טידום בעליק. נולום ארווס סאפיאן - פוסיליס קוויס, אקווזמן קוואזי במר מודוף. אודיפו בלאסטיק מונופץ קליר, בנפת נפקט למסון בלרק - וענוף נולום ארווס סאפיאן - פוסיליס קוויס, אקווזמן נולום ארווס סאפיאן - פוסיליס קוויס, אקווזמן קוואזי במר מודוף. אודיפו בלאסטיק מונופץ קליר
-				</p>
+				<v-layout column wrap justify-space-between>
+				<v-flex>
+					<p class="caption-text" @click="dialog3 = true">
+					ספינת הדגל של המפעל,
+מטאטא כבישים הידרוסטטי עם מנוע חזק במיוחד, 
+המיכל בנפח של 5 מ"ק.
+מנוע פרקינס או איווקו, משאבות הידראוליות מתוצרת .BOSCH
+
+					</p>
+				</v-flex>
+				<v-flex>
+					<p @click="dialog3 = true" class="details-link">לפרטים נוספים..</p>
+				</v-flex>
+			</v-layout>
 			</v-flex>
 		</v-layout>
 		<v-dialog v-model="dialog3" hide-overlay>
@@ -120,7 +175,7 @@
 			<v-toolbar>
 
 			<v-toolbar-title>
-			<span class=" black--text">H3 - מפרט טכני </span>
+			<span class=" black--text">H5 - מפרט טכני </span>
 			</v-toolbar-title>
 				<v-spacer></v-spacer>
 			<v-toolbar-items>
@@ -130,14 +185,30 @@
 			</v-toolbar>
 			<v-card-text>
 			<v-container>
-			<v-flex xs8 ma-auto>
-				<v-img :src="require('@/assets/h5.jpg')" aspect-ratio="2"> </v-img>
+			<v-flex xs12 xl8 ma-auto>
+						<v-img :src="require('@/assets/H5/h5-0.jpg')"></v-img>
 			</v-flex>
-			<v-flex xs8 ma-auto>
-			<span class="display-2">H3</span>
+			<v-flex xs12 xl8 ma-auto>
+			<span class="display-2">H5</span>
 			<p>
-			לורם איפסום דולור סיט אמט, קונסקטורר אדיפיסינג אלית לורם איפסום דולור סיט אמט, קונסקטורר אדיפיסינג אלית. סת אלמנקום ניסי נון ניבאה. דס איאקוליס וולופטה דיאם. וסטיבולום אט דולור, קראס אגת לקטוס וואל אאוגו וסטיבולום סוליסי טידום בעליק. נולום ארווס סאפיאן - פוסיליס קוויס, אקווזמן קוואזי במר מודוף. אודיפו בלאסטיק מונופץ קליר, בנפת נפקט למסון בלרק - וענוף נולום ארווס סאפיאן - פוסיליס קוויס, אקווזמן נולום ארווס סאפיאן - פוסיליס קוויס, אקווזמן קוואזי במר מודוף. אודיפו בלאסטיק מונופץ קליר
+			ספינת הדגל של המפעל,
+מטאטא כבישים הידרוסטטי עם מנוע חזק במיוחד, 
+המיכל בנפח של 5 מ"ק.
+מנוע פרקינס או איווקו, משאבות הידראוליות מתוצרת .BOSCH
+הכלי רחב יותר מדגם H4 וכולל מנוע גדול יותר. 
+כולל מערכת יחודית של 2 מברשות הנעות ימינה ושמאלה להגדלת רוחב הטיאוט ופיית יניקה בעלת כושר יניקה גבוה במיוחד,
+מתזי מיים הממוקמים בחזית הכלי מפזרים רסס מיים כדי לספוג את האבק בזמן פעולת הטיאטוא.
+מיכל המיים גדול במיוחד ונותן אפשרות לעבודת שטיפה רציפה לאורך זמן.
+ה H5 כולל מערכת נוספת לשטיפה בלחץ עם צינור באורך של 15 מטר ואקדח שטיפה בלחץ גבוה. המערכת מורכבת על גג הכלי ומאפשרת שטיפה בכל הכיוונים.
+תא נהג פנורמי, מבודד מפגעי מזג אויר, רעשים, אבק וגזי פליטה.
+תא הנהג כולל מערכת מיזוג אויר, כיסא נהג קפיצי, מתכוונן ונוח במיוחד. וכן כיסא נוסף לאיש צוות שני. 
+רדיו ומצלמה אחורית עם מסך צבעוני.
+וכן מערכת שליטה ותפעול של המברשות, השטיפה וריקון מיכל האשפה.
+
 			</p>
+				<v-img :src="require('@/assets/H5/h5-1.jpg')"></v-img>
+				<v-img :src="require('@/assets/H5/h5-2.jpg')"></v-img>
+				<v-img :src="require('@/assets/H5/H5-H4.jpg')"></v-img>
 			</v-flex>
 			
 			</v-container>
